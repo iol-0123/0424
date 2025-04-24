@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九宮格圖片</title>
+    <style>
+        header {
+        width: 100%;	  
+        background: #eaeaea;		
+      }	  
+    .p {
+        font-size: 20px;		
+      }
+      .container {
+        display: flex;
+        justify-content: flex-start;
+        background: beige;  
+      }
+        .container2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            width: 300px; /* 設定容器寬度 */
+            height: 300px; /* 設定容器高度 */
+        }
+        .container img {
+            display: block; /* 將圖片設為區塊元素 */
+            margin: auto; /* 水平和垂直居中 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 確保圖片填滿格子 */
+            border-radius: 10px; /* 圓角邊框 */
+        }
+
+        .item {
+        width: 300px; /* 設定圖片的寬度 */
+        padding: 10px;
+        margin: 10px;
+      }	  
+
+        footer {
+        width: 100%;
+        background: #eaeaea;		
+        clear: both;        
+      }	
+    </style>
+</head>
+<body>
+    <header><h1>薩摩耶不耶</h1></header>
+    <P class="p">指令:生成一之薩摩耶</P>
+    <div class="container">
+        <div class="item">
+            <img src="1.png" width="300" height="300">
+        </div>
+    <div class="container2">
+        <img src="2.png" alt="Image 1">
+        <img src="3.png" alt="Image 2">
+        <img src="4.png" alt="Image 3">
+        <img src="5.png" alt="Image 4">
+        <img src="6.png" alt="Image 5">
+        <img src="7.png" alt="Image 6">
+        <img src="8.png" alt="Image 7">
+        <img src="9.png" alt="Image 8">
+        <img src="10.png" alt="Image 9">
+        <footer></footer>
+    </div>
+</body>
+</html>
